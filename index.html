@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دکمه نفرین‌شده</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@500;700;900&family=Lalezar&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- صفحه ورود اسم -->
+  <div class="name-screen" id="nameScreen">
+    <div class="name-box">
+      <h1>قبل از شروع...</h1>
+      <p>اسمت چیه قربانی؟</p>
+      <input type="text" id="nameInput" placeholder="اسمتو بنویس..." maxlength="20" autocomplete="off">
+      <button class="start-btn" id="nameBtn">وارد جهنم شو</button>
+    </div>
+  </div>
+
+  <!-- صفحه داستان -->
+  <div class="story-screen" id="storyScreen" style="display:none;">
+    <div class="story-box">
+      <h1 id="storyTitle">داستان <span id="storyName"></span></h1>
+      <div class="story-text" id="storyText"></div>
+      <button class="start-btn" id="startBtn">بزن بریم... پشیمون می‌شی</button>
+    </div>
+  </div>
+
+  <!-- بازی اصلی -->
+  <div class="container" id="gameContainer" style="display:none;">
+    <div class="rank-badge" id="rankBadge">تازه‌کار</div>
+
+    <button class="btn" id="myBtn">
+      <span class="btn-text">کلیک کن!</span>
+      <span class="btn-shine"></span>
+    </button>
+
+    <div class="counter" id="counter">۰</div>
+    <p class="hint" id="hint">کلیک کن یا Enter بزن</p>
+  </div>
+
+  <!-- دکمه نامرئی Easter Egg -->
+  <button id="secretBtn" class="secret-btn" title=""></button>
+
+  <!-- پیام پشیمونی وسط بازی -->
+  <div class="regret-msg" id="regretMsg"></div>
+
+  <!-- تبریک -->
+  <div class="congrats" id="congrats"></div>
+
+  <!-- اچیومنت -->
+  <div class="achievement" id="achievement">
+    <div class="ach-icon">💀</div>
+    <div class="ach-text">
+      <div class="ach-title" id="achTitle"></div>
+      <div class="ach-desc" id="achDesc"></div>
+    </div>
+  </div>
+
+  <!-- مودال سؤالات معمولی -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modal-rank" id="modalRank"></div>
+      <p class="modal-taunt" id="modalTaunt"></p>
+      <div class="modal-buttons" id="modalButtons"></div>
+    </div>
+  </div>
+
+  <!-- مودال Easter Egg (راه فرار دروغی) -->
+  <div class="modal" id="secretModal">
+    <div class="modal-content">
+      <div class="modal-rank" id="secretRank"></div>
+      <p class="modal-taunt" id="secretTaunt"></p>
+      <div class="modal-buttons" id="secretButtons"></div>
+    </div>
+  </div>
+
+  <!-- Game Over -->
+  <div class="game-over" id="gameOver">
+    <h1>GAME OVER</h1>
+    <p id="finalScore"></p>
+    <p class="final-taunt" id="finalTaunt"></p>
+    <button class="restart-btn" id="restartBtn">از اول شروع کن (بازنده)</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
