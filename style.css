@@ -468,7 +468,7 @@ body {
   height: 22px;
   background: rgba(255, 30, 30, 0.15);   /* کمی قرمز کم‌رنگ */
   border: 1px solid rgba(255, 50, 50, 0.25);
-  opacity: 0.03;                         /* قابل دیدن‌تر ولی هنوز مخفی */
+  opacity: 1;                         /* قابل دیدن‌تر ولی هنوز مخفی */
   cursor: pointer;
   z-index: 999;
   border-radius: 50%;
@@ -477,7 +477,7 @@ body {
 }
 
 .secret-btn:hover {
-  opacity: 0.5;
+  opacity: 1;
   transform: scale(1.3);
   box-shadow: 0 0 15px rgba(255, 50, 50, 0.4);
 }
